@@ -14,10 +14,9 @@ code {
     monospace;
 }
 
-
 .main-layout {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;  
 }
 
 nav {
@@ -27,16 +26,20 @@ nav {
   overflow-y: scroll;
   text-align: center;
   width: 250px;
+  overflow: hidden;
 }
 nav ul {
-  align-items: center;
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   padding-left: 0;
 }
 
 nav li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   list-style: none;
   margin-bottom: 10px;
 }
